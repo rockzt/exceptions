@@ -6,7 +6,7 @@ for value in values:
     try:
         print(10 / int(value))
     # Handling multiple exceptions in one except block
-    except ZeroDivisionError as e:
+    except (ZeroDivisionError, AttributeError) as e:
         # print(str(e))
         pass
     except ValueError as e:
